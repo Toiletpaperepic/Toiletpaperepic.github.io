@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id="myvideo">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Gex and Doom</title>
+<link rel="icon" href="images/Kool-Aid.ico">
+</head>
+
+<body background="MATT'S WEBSITE_files/bkgndpurp.gif">
+
+<button onclick="openFullscreen();">Open in Fullscreen Mode</button>
+
+<script>
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+<br>
+<html>
+<body>
+
+<iframe id="myvideoo" s-resize="59" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-pointer-lock allow-popups-to-escape-sandbox allow-downloads" frameborder="1" allowfullscreen="" src="https://holyubofficial.net/?z" style="overflow: auto;height: 630px;width: 1200px;">
+
+</body>
+</html>
