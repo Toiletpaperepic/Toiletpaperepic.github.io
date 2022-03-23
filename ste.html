@@ -10,9 +10,13 @@
 <body background="MATT'S WEBSITE_files/bkgndpurp.gif">
 
 <button onclick="openFullscreen();">Open in Fullscreen Mode</button>
+<button onclick="closeFullscreen();">close in Fullscreen Mode</button>
 
 <script>
-var elem = document.getElementById("myvideo");
+/* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
+
+/* View in fullscreen */
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -20,6 +24,17 @@ function openFullscreen() {
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
   }
 }
 </script>
