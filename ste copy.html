@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>plex media sever</title>
+<link rel="icon" href="images/favicon-32x32.png">
+</head>
+
+<body background="MATT'S WEBSITE_files/bkgndpurp.gif">
+
+<button onclick="openFullscreen();">Open in Fullscreen Mode</button>
+<button onclick="closeFullscreen();">close in Fullscreen Mode</button>
+<a href="folder/teck.html">link to plex media sever</a>
+
+<script>
+
+var elem = document.documentElement;
+
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}
+
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { 
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { 
+    document.msExitFullscreen();
+  }
+}
+</script>
+<br>
+<html>
+<body>
+
+<iframe id="myvideoo" s-resize="59" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-pointer-lock allow-popups-to-escape-sandbox allow-downloads" frameborder="1" allowfullscreen="" src="link" style="overflow: auto;height: 630px;width: 1200px;">
+
+</body>
+</html>
