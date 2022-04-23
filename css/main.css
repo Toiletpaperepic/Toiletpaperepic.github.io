@@ -13,9 +13,9 @@ p
     font-family: 'Segoe UI';
     color: rgb(255, 255, 255);
 }
-html, body, tr, td, tbody, table, .treeElement
+html, body, tr, td, tbody, table, .treeElement ,p
 {
-    text-align: center;
+    text-align: -webkit-center;
 }
 span
 {
@@ -25,4 +25,8 @@ h1, marquee
 {
     font-family: 'Segoe UI';
     color: rgb(255, 255, 255);
+}
+table,tr,td
+{
+    
 }
