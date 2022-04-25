@@ -66,6 +66,29 @@ function extensionlink() {
   popup.focus()
   window.close();
 }
+var elem = document.documentElement;
+
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}
+
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { 
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { 
+    document.msExitFullscreen();
+  }
+}
 console.log("%ci stole amogos.studio html noob", "color:blue; font-size:50px");
 console.log("%c3yr old haccing skills #2: inspect elements and console", "color:blue; font-size:50px");
 console.log("%cstop being s u s you little baka", "color:red; font-size:80px");
