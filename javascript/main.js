@@ -89,6 +89,12 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+function winamp(){
+  const app = document.getElementById("app")
+  const webamp = new Webamp();
+  webamp.renderWhenReady(app);
+;}
+
 console.log("%ci stole amogos.studio html noob", "color:blue; font-size:50px");
 console.log("%c3yr old haccing skills #2: inspect elements and console", "color:blue; font-size:50px");
 console.log("%cstop being s u s you little baka", "color:red; font-size:80px");
