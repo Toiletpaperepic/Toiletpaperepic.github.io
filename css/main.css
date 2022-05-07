@@ -12,20 +12,16 @@ p
     font-family: 'Segoe UI';
     color: rgb(255, 255, 255);
 }
-html, body, tr, td, tbody, table, .treeElement ,p
+html, body, tr, td, p, .treeElement
 {
-    text-align: -webkit-center;
-}
-span
-{
-    color: rgb(0, 0, 0);
+    text-align: center;
 }
 h1, marquee
 {
     font-family: 'Segoe UI';
     color: rgb(255, 255, 255);
 }
-table,tr,td
+#lbody
 {
-    
+    text-align:  -webkit-center;  
 }

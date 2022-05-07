@@ -75,7 +75,7 @@ function winamp(){
     {url: 'winamp/5.mp3'},
     {url: 'winamp/6.mp3'},
     {url: 'winamp/7.mp3'},
-    {url: 'winamp.mp3'},
+    {url: 'winamp/8.mp3'},
     {url: 'winamp/9.mp3'},
     {url: 'winamp/10.mp3'},
     {url: 'winamp/11.mp3'},
@@ -119,7 +119,7 @@ function winamp(){
 }
 function Release(){
 let Release;
-    Release = "0.1.65";   
+    Release = "0.1.66";   
     console.log("You are using Release version "+ Release +"");
     let userAgent = navigator.userAgent
     let browserName;
