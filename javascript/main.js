@@ -119,7 +119,7 @@ function winamp(){
 }
 function Release(){
 let Release;
-    Release = "0.1.63";   
+    Release = "0.1.65";   
     console.log("You are using Release version "+ Release +"");
     let userAgent = navigator.userAgent
     let browserName;
