@@ -92,7 +92,12 @@ function closeFullscreen() {
 function winamp(){
   const app = document.getElementById("app")
   const webamp = new Webamp();
-  webamp.appendTracks([{url: 'demo.mp3'},]);
+  webamp.appendTracks([
+    {url: 'demo.mp3'},
+  ]);
+  webamp.setSkinFromUrl([
+    {url: 'folder\family_guy.wsz'},
+  ]);
   webamp.renderWhenReady(app);
   console.log('rendered webamp!');
 }
