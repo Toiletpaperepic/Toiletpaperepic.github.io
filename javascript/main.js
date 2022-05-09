@@ -120,7 +120,7 @@ function winamp(){
 function Release(){
 let Release;
     Release = "0.1.66";   
-    console.log("You are using Release version "+ Release +"");
+    console.log("Release version "+ Release +"");
     let userAgent = navigator.userAgent
     let browserName;
     
@@ -129,11 +129,11 @@ let Release;
       }else if(userAgent.match(/firefox|fxios/i)){
         pledge ()
         browserName = "firefox";
-      }  else if(userAgent.match(/safari/i)){
+      }else if(userAgent.match(/safari/i)){
         browserName = "safari";
       }else if(userAgent.match(/opr\//i)){
         browserName = "opera";
-      } else if(userAgent.match(/edg/i)){
+      }else if(userAgent.match(/edg/i)){
         browserName = "Microsoft Edge";
       }else{
         browserName="No browser detection";
@@ -141,7 +141,8 @@ let Release;
       }
              
     console.log("You are using "+ browserName +" browser");
-    document.getElementById("copyright").innerHTML = "any Copyright images, tv shows and music does not belongs To Gex And Doom, Release version "+ Release +" Beta. Runing on "+ browserName +"";
+    document.getElementById("copyright").innerHTML = "any Copyright images, tv shows and music does not belongs To Gex And Doom, Release version "+ Release +" Beta.  Runing on "+ browserName +"";
+    document.getElementById("copyright2").innerHTML = ""+ userAgent +"";
 }
 
 console.log("%ci stole amogos.studio html noob", "color:blue; font-size:50px");
