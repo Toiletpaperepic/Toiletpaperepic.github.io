@@ -41,8 +41,8 @@ function extensionlink() {
   popup.focus()
   window.close();
 }
-var elem = document.documentElement;
 
+var elem = document.documentElement;
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -119,7 +119,7 @@ function winamp(){
 }
 function Release(){
 let Release;
-    Release = "0.1.66";   
+    Release = "0.1.72";   
     console.log("Release version "+ Release +"");
     let userAgent = navigator.userAgent
     let browserName;
