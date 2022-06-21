@@ -119,7 +119,7 @@ function winamp(){
 }
 function Release(){
 let Release;
-    Release = "0.1.72";   
+    Release = "0.1.73";   
     console.log("Release version "+ Release +"");
     let userAgent = navigator.userAgent
     let browserName;
@@ -141,7 +141,7 @@ let Release;
       }
              
     console.log("You are using "+ browserName +" browser");
-    document.getElementById("copyright").innerHTML = "any Copyright images, tv shows and music does not belongs To Gex And Doom, Release version "+ Release +" Beta.  Runing on "+ browserName +"";
+    document.getElementById("copyright").innerHTML = "any Copyright images, tv shows and music does not belongs To Gex And Doom, Beta version "+ Release +".  Runing on "+ browserName +"";
     document.getElementById("copyright2").innerHTML = ""+ userAgent +"";
 }
 
